@@ -1,0 +1,8 @@
+<h1>Pictures</h1>
+<% @pictures.each do |picture| %>
+  <div class = "card">
+    <%= image_tag picture.photo_url, width: "10%" %>
+    <%= picture.name %>
+    <%= picture.price %>
+  </div>
+<% end %>
